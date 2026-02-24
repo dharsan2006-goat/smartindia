@@ -1,0 +1,176 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.add-book-form {
+  background-color: rgba(228, 228, 228, 0.575);
+  border: 2px solid rgb(228, 228, 228);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.add-book-form * {
+  margin: 0.5rem 0;
+}
+
+.add-book-form h1 {
+  text-align: center;
+}
+
+/* Drag and Drop Styles */
+.drag-drop-area {
+  border: 3px dashed #ccc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.drag-drop-area.drag-active {
+  border-color: #667eea;
+  background-color: #f0f0ff;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  cursor: pointer;
+  display: block;
+}
+
+.file-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.file-label p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.file-label small {
+  display: block;
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+.browse-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.file-info {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.input-container * {
+  display: block;
+}
+
+.input-container label {
+  font-size: 1.1rem;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+.input-container textarea {
+  resize: vertical;
+}
+
+/* Progress Bar */
+.progress-container {
+  margin: 1rem 0;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+/* Messages */
+.message {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.addBook-btn {
+  border: 1px solid rgb(0, 88, 0);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-family);
+  background-color: green;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in filter;
+  cursor: pointer;
+  width: 100%;
+}
+
+.addBook-btn:hover {
+  filter: brightness(90%);
+}
+
+.addBook-btn:disabled {
+  background-color: #ccc;
+  border-color: #999;
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 350px) {
+}
